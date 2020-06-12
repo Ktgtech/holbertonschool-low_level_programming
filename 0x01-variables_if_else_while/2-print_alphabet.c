@@ -11,7 +11,7 @@ int main(void)
 	{
 		putchar(al);
 		al++;
-	       }
+	}
 	putchar(10);
 	return (0);
 }
