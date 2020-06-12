@@ -13,5 +13,6 @@ int main(void)
 		putchar(ti);
 		ti--;
 	}
+	putchar(10);
 	return (0);
 }
