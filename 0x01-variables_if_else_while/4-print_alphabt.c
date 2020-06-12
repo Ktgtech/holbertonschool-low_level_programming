@@ -9,13 +9,13 @@ int main(void)
 
 	while (be <= 'z')
 	{
-		if ((be != 'q') || (be != 'e'))
+		if ((be == 'q') || (be == 'e'))
 		{
-			putchar(be);
-			be++;
+			(be++);
 		}
 			else
 			{
+				putchar(be);
 				be++;
 			}
 
