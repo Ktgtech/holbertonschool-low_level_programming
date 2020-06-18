@@ -1,16 +1,14 @@
 #include "holberton.h"
 
 /**
- * int add - function tha adds two numbers.
- * @a: parameter
- * @b: parameter
- * Return: Always 0.
+ * add - function tha adds two numbers.
+ * @a: parameter.
+ * @b: parameter.
+ * Return: sum.
  */
 
 int add(int a, int b)
 {
 
 	return (a + b);
-
-
 }
