@@ -1,13 +1,11 @@
-B#include "holberton.h"
+#include "holberton.h"
 
 /**
  * jack_bauer - prints the our of the day.
- * @h: variable.
- * @m: variable.
  * Return: Always 0.
  */
 
-void jack_bauer(int h, int m)
+void jack_bauer(void)
 {
 
 	int h;
