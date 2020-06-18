@@ -13,7 +13,7 @@ for (n = 0; n <= 9; n++)
 {
 	if (n != 4 && n != 2)
 	{
-		putchar(n + '0');
+		_putchar(n + '0');
 	}
 }
 _putchar('\n');
