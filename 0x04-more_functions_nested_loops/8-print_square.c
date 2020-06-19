@@ -7,16 +7,19 @@
 void print_square(int size)
 {
 	int b = 0;
-	int a;
 
-	for (; b < size; b++)
-	{
-		for (a = 0; a < size; a++)
+	do {
+		int a = 0;
+
+		while (a < size)
 		{
-			putchar('#');
+			_putchar('#');
+			a++;
 		}
 
-		putchar('\n');
-	}
+		_putchar('\n');
+		b++;
+
+	} while (b < size);
 
 }
