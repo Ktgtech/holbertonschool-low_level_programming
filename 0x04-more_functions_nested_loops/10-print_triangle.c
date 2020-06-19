@@ -9,29 +9,35 @@ void print_triangle(int size)
 {
 	int numl, esp, nume;
 
-	numl = 1;
-
-	while (numl <= size)
+	if (size <= 0)
 	{
-
-		esp = 1;
-
-		while (esp <= (size - numl))
-
-		{
-			_putchar(' ');
-			esp++;
-		}
-
-		nume = 1;
-
-		while (nume <= numl)
-		{
-			_putchar('#');
-			nume++;
-		}
-
-		numl++;
 		_putchar('\n');
+	}
+	else
+	{
+		numl = 1;
+
+		while (numl <= size)
+		{
+			esp = 1;
+
+			while (esp <= (size - numl))
+
+			{
+				_putchar(' ');
+				esp++;
+			}
+
+			nume = 1;
+
+			while (nume <= numl)
+			{
+				_putchar('#');
+				nume++;
+			}
+
+			numl++;
+			_putchar('\n');
+		}
 	}
 }
