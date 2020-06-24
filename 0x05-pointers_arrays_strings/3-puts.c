@@ -1,8 +1,7 @@
 #include "holberton.h"
 /**
- * _strlen - prints the length of a string.
- * @s: pointer.
- * Return: always ret.
+ * _puts - prints the length of a string.
+ * @str: pointer.
  **/
 void _puts(char *str)
 {
