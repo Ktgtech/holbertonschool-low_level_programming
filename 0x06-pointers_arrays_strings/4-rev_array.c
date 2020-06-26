@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _strcat -  concatenates two strings.
+ * reverse_array -  reverse an array.
  * @a: parameter.
  * @n: parameter.
  **/
