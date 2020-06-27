@@ -1,4 +1,4 @@
-B#include "holberton.h"
+#include "holberton.h"
 /**
  * cap_string -  concatenates two strings.
  * @s: parameter.
@@ -29,8 +29,6 @@ char *cap_string(char *s)
 
 		if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
 			s[i + 1] = s[i + 1] - 32;
-
-
 		}
 		s++;
 		i++;
