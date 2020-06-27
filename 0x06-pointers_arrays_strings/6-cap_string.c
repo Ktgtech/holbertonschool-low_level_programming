@@ -9,7 +9,7 @@ char *cap_string(char *s)
 	char *p = s;
 	int i;
 
-	for (i = 0 ;s[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		switch (s[i])
 		{
