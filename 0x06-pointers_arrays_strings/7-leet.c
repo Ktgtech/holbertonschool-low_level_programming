@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * _strcat -  concatenates two strings.
- * @dest: parameter.
- * @src: parameter.
+ * leet -  concatenates two strings.
+ * @s: array.
+ * Return: p, pointer.x
  **/
 
 char *leet(char *s)
@@ -15,7 +15,7 @@ char *p = s;
 while (*s != '\0')
 {
 	i = 0;
-	while(let[i] != '\0')
+	while (let[i] != '\0')
 	{
 		if (*s == let[i])
 		{
