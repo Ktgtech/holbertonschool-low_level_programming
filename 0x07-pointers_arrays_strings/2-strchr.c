@@ -18,5 +18,5 @@ char *_strchr(char *s, char c)
 			return (aux);
 		}
 	}
-	return (s);
+	return (0);
 }
