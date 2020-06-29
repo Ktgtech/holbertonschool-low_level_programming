@@ -1,4 +1,4 @@
-#include "holberton.h"
+ #include "holberton.h"
 /**
  * _strspn - gets the length of a prefix substring..
  * @s: punter parameter.
@@ -8,10 +8,12 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int su = 0;
-	int i, a;
+	unsigned int i, a;
 
-	for (i = 0; *(s + i) != ' '; i++)
+	for (i = 0; *(s + i) != '\0'; i++)
 	{
+		if (i != su)
+			break;
 		for (a = 0; *(accept + a) != '\0'; a++)
 		{
 			if (*(s + i) == *(accept + a))
