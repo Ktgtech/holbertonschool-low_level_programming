@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * print_diagsums - prints the sum of the two diagonals of a square matrix of integers.
+ * print_diagsums - sum of the 2 diagonals of a square matrix of integers.
  * @a: array.
- * @siza: parameter.
+ * @size: parameter.
  */
 void print_diagsums(int *a, int size)
 {
