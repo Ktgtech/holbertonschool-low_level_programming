@@ -1,4 +1,4 @@
-B#include "holberton.h"
+#include "holberton.h"
 /**
  * print_chessboard - check the code for Holberton School students.
  * @a: punter.
