@@ -2,7 +2,7 @@
 /**
  * main - program that prints the number of arguments.
  * @argc: parameter counter.
- * @argv: parameter array.
+ * @argvUnused:no use parameter array.
  * Return: always 0.
  **/
 int main(int argc, char **argvUnused __attribute__((unused)))
