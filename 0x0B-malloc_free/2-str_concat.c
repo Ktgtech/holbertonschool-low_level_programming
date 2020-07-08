@@ -1,19 +1,20 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
- * _strdup - copy of the string given as a parameter.
- * @str: pointer parameter.
+ * str_concat -  concatenates two strings.
+ * @s1: pointer parameter.
+ * @s2: pointer parameter.
  * Return: null or pointer.
  **/
 char *str_concat(char *s1, char *s2)
 {
 	char *p = NULL;
-	int it , i1, i2, i , c;
+	int it, i1, i2, i, c;
 
 	for (i1 = 0; s1[i1] != '\0'; i1++)
 	{
 	}
-	for (i2 = 0 ;s2[i2] != '\0'; i2++)
+	for (i2 = 0 ; s2[i2] != '\0'; i2++)
 	{
 	}
 	it = i1 + i2;
