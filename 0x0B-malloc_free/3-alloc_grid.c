@@ -3,7 +3,7 @@
 /**
  * alloc_grid - copy of the string given as a parameter.
  * @width: pointer parameter.
- * height:  poinet pointer.
+ * @height:  poinet pointer.
  * Return: pointer to a 2 dimensional array of integers
  **/
 int **alloc_grid(int width, int height)
