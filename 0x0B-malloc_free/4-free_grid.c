@@ -1,9 +1,9 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
- *  free_grid - copy of the string given as a parameter.
+ * free_grid - copy of the string given as a parameter.
+ * @grid: doble pointer array.
  * @height:  poinet pointer.
- * Return: pointer to a 2 dimensional array of integers
  **/
 void free_grid(int **grid, int height)
 {
