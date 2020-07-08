@@ -10,11 +10,6 @@ char *str_concat(char *s1, char *s2)
 {
 	char *p = NULL;
 	int it, i1, i2, i, c;
-	if (*s1 == NULL || *s2 == NULL)
-	{
-		*s1 = " ";
-		*s2 = " ";
-	}
 
 	for (i1 = 0; s1[i1] != '\0'; i1++)
 	{
