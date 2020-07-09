@@ -1,12 +1,11 @@
-#include "holberton.h"
 #include <stdlib.h>
-
+#include "holberton.h"
 /**
  * argstostr - concatenates all the arguments of your program.
  * @ac: parameter.
  * @av: parameter array.
  * Return: pointer or null.
- */
+ **/
 
 char *argstostr(int ac, char **av)
 {
@@ -27,7 +26,7 @@ char *argstostr(int ac, char **av)
 		}
 	}
 	p = ((char *)malloc(leng * sizeof(char *) + ac + 1));
-	if (!p)
+	if (p == NULL)
 		return (0);
 
 	for (i = 0; av[i]; i++)
@@ -41,5 +40,6 @@ char *argstostr(int ac, char **av)
 		p[buf] = '\n';
 		buf++;
 	}
+	p[buf] = '\0';
 	return (p);
 }
