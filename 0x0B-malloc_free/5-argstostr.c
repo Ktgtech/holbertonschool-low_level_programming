@@ -31,10 +31,9 @@ char *argstostr(int ac, char **av)
 	}
 	for (i = 0; av[i]; i++)
 	{
-		for (i2 = 0; av[i][i2]; i2++)
+		for (i2 = 0; av[i][i2]; i2++, buf++)
 		{
 			p[buf] = av[i][i2];
-			buf++;
 		}
 		p[buf] = '\n';
 		buf++;
