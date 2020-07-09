@@ -19,19 +19,18 @@ char *argstostr(int ac, char **av)
 
 	for (i = 0; av[i]; i++)
 	{
-
 		for (i2 = 0; av[i][i2]; i2++)
 		{
 			leng++;
 		}
 	}
-	p = ((char *)malloc(leng * sizeof(char *) + ac + 1));
+	p = (char *)malloc(leng * sizeof(char *) + ac + 1);
 	if (p == NULL)
+	{
 		return (NULL);
-
+	}
 	for (i = 0; av[i]; i++)
 	{
-
 		for (i2 = 0; av[i][i2]; i2++)
 		{
 			p[buf] = av[i][i2];
