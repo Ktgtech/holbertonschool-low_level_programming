@@ -9,13 +9,15 @@
 
 char *argstostr(int ac, char **av)
 {
-	int i, i2, leng, buf = 0;
+	int i, i2, buf, leng;
 	char *p;
 
 	if (ac == 0 || av == NULL)
 	{
 		return (NULL);
 	}
+
+	i = i2 = buf = leng = 0;
 
 	for (i = 0; av[i]; i++)
 	{
@@ -29,14 +31,13 @@ char *argstostr(int ac, char **av)
 	{
 		return (NULL);
 	}
-	for (i = 0; av[i]; i++)
+	for (i = 0; av[i]; i++, buf++)
 	{
 		for (i2 = 0; av[i][i2]; i2++, buf++)
 		{
 			p[buf] = av[i][i2];
 		}
 		p[buf] = '\n';
-		buf++;
 	}
 	p[buf] = '\0';
 	return (p);
