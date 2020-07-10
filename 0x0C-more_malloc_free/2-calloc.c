@@ -1,6 +1,5 @@
 #include "holberton.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 /**
  * _calloc - allocates memory
@@ -21,7 +20,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (!p)
 		return (NULL);
 
-	for (i = 0; i < size; i++)
+	for (i = 0; i < nmemb; i++)
 		p[i] = 0;
 
 	return (p);
