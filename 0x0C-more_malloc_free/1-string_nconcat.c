@@ -1,5 +1,6 @@
 #include "holberton.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * string_nconcat - allocates memory
@@ -14,12 +15,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int i, i2, leng, buf;
 
 	i = i2 = leng = buf = 0;
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL)
 	{
 		s1 = "";
-		s2 = "";
 	}
 
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
 	for (i = 0; s1[i]; i++)
 
 	for (i2 = 0; s2[i2]; i2++)
