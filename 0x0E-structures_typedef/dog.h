@@ -21,7 +21,6 @@ typedef struct dog
 * @age: Dog's age.
 * @owner: Dog's owner.
 **/
-10
 
 typedef struct dog_t
 {
