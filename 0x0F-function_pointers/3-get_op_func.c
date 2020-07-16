@@ -1,31 +1,39 @@
 #include "3-calc.h"
+#include <stddef.h>
 #include <stdlib.h>
-#include <stdio.h>
 
 /**
- * get_op_func - pointer to a function
- * @s: pointer to a char
+ * get_op_func - Searches for an integer on an array
+ *   using a custom comparator function.
  *
- * Return: pointer function
+ *@s: the operator passed as argument to the program.
+ *
+ * Return: a pointer to the function that corresponds to
+ *   the operator given as a parameter.
  */
+
 int (*get_op_func(char *s))(int, int)
 {
-	op_t ops[] = {
-		{"+", op_add},
-		{"-", op_sub},
-		{"*", op_mul},
-		{"/", op_div},
-		{"%", op_mod},
-		{NULL, NULL}
-	};
-	int i;
-
-	i = 0;
-	while (i < 5)
+	if (s != NULL)
 	{
-		if (*(ops[i]).op == *s && *(s + 1) == '\0')
-			return (ops[i].f);
-		i++;
+		op_t ops[] = {
+			{"+", op_add},
+			{"-", op_sub},
+			{"*", op_mul},
+			{"/", op_div},
+			{"%", op_mod},
+			{NULL, NULL}
+		};
+		int i;
+
+		i = 0;
+
+		while (i != 5 && (ops[i].op)[0] != s[0])
+		{
+			i++;
+		}
+
+		return (i == 6 ? NULL : ops[i].f);
 	}
 	return (NULL);
 }
